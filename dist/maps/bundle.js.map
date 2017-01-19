@@ -1,0 +1,1 @@
+{"version":3,"file":null,"sources":["/Users/danieldestefanis/Documents/local/shawns-wedding/src/js/main.js"],"sourcesContent":["const main = () => {\n\n}\n\ndocument.addEventListener('DOMContentLoaded', main)\n"],"names":[],"mappings":";;;CAAA,MAAM,OAAO,MAAM,EAAnB;;AAIA,CAAA,SAAS,gBAAT,CAA0B,kBAA1B,EAA8C,IAA9C;;"}
