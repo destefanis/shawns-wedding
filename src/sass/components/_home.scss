@@ -1,0 +1,172 @@
+/*
+ *  Define the about section styles.
+ */
+
+ body {
+  position: relative;
+ }
+
+.hero {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  background: $white;
+  color: $pink;
+  text-align: center;
+  background-image: url('images/seattle-background-photo.jpg');
+  background-size: cover;
+  background-position: top;
+
+  svg {
+    position: absolute;
+    transform: translatex(-50%);
+    left: 50%;
+    bottom: 15%;
+    width: 180px;
+    height: auto;
+    fill: $white;
+  }
+}
+
+.hero-header {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -28%);
+  font-size: 7rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $sans;
+
+  span {
+    display: block;
+    font-size: 2.6rem;
+    font-style: italic;
+  }
+}
+
+.call-to-action {
+  transform: translateX(-50%);
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  background: $white;
+  color: #474a5a;
+  padding: 15px 30px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.guide {
+  position: absolute;
+  content: '';
+  width: 3px;
+  background: $pink;
+  position: absolute;
+  height: 90%;
+  left: 50%;
+  top: 680px;
+  z-index: 100;
+}
+
+.ampersand {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 2.6rem;
+  font-style: italic;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hr-right {
+  margin: 20px 0 20px auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.section {
+  position: relative;
+  margin: 10em 0;
+}
+
+.section-info {
+  display: inline-block;
+  width: 42%;
+  color: $navy;
+
+  a {
+    color: $navy;
+    text-decoration: underline;
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  hr {
+    border-color: $navy;
+    width: 12%;
+    border-width: 4px;
+  }
+
+  h2 {
+    padding-top: 25px;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: bold;
+    line-height: 1.1;
+  }
+
+  p {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+  }
+}
+
+.section-svg {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 200px;
+  fill: $pink;
+}
+
+.svg-map {
+  left: auto;
+  right: 30%;
+}
+
+.image-wrapper {
+  display: block;
+  position: relative;
+  box-shadow: 0 1px 6px rgba($black, 0.26);
+  text-align: center;
+  margin: 10em auto 10em;
+  z-index: 150;
+}
+
+.image-wrapper--couple {
+  max-width: 400px;
+  left: -150px;
+  margin-bottom: 4em;
+}
+
+.image-wrapper--venue {
+  max-width: 500px;
+  right: -100px;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.image-wrapper--venue-2 {
+  max-width: 500px;
+  margin-bottom: 0;
+  right: 0;
+}
+
