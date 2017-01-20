@@ -15,7 +15,7 @@
   text-align: center;
   background-image: url('images/seattle-background-photo.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
 
   svg {
     position: absolute;
@@ -33,16 +33,26 @@
   top: 28%;
   left: 50%;
   transform: translate(-50%, -28%);
-  font-size: 7rem;
+  font-size: 4.4rem;
   letter-spacing: 6px;
   text-transform: uppercase;
   font-weight: 700;
   font-family: $sans;
 
+  @include min($desktop) {
+    font-size: 7rem;
+  }
+
   span {
     display: block;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     font-style: italic;
+    letter-spacing: 3px;
+
+    @include min($desktop) {
+      font-size: 2.6rem;
+      letter-spacing: 6px;
+    }
   }
 }
 
@@ -66,7 +76,7 @@
   width: 3px;
   background: $pink;
   position: absolute;
-  height: 90%;
+  height: 72%;
   left: 50%;
   top: 680px;
   z-index: 100;
@@ -87,8 +97,16 @@
   margin: 20px 0 20px auto;
 }
 
+.hr-center {
+  margin: 20px auto;
+}
+
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .section {
@@ -98,8 +116,16 @@
 
 .section-info {
   display: inline-block;
-  width: 42%;
+  width: 60%;
   color: $navy;
+  position: relative;
+  z-index: 900;
+  background: $white;
+
+  @include min($desktop) {
+    width: 42%;
+    background: none;
+  }
 
   a {
     color: $navy;
@@ -127,19 +153,56 @@
     font-size: 2.6rem;
     letter-spacing: 1px;
   }
+
+  .subheader {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-style: italic;
+  }
+}
+
+.section-info--full {
+  display: block;
+  width: 90%;
+  margin: 12em auto 2em;
+
+  @include min($desktop) {
+    width: 70%;
+  } 
+
+  svg {
+    margin-top: 1em;
+  }
 }
 
 .section-svg {
   position: absolute;
-  top: 0;
-  left: 30%;
-  width: 200px;
+  top: 2%;
+  left: 10%;
+  width: 100px;
   fill: $pink;
+
+  @include min($desktop) {
+    top: 0;
+    left: 30%;
+    width: 200px;
+  }
 }
 
 .svg-map {
   left: auto;
-  right: 30%;
+  right: 10%;
+
+  @include min($desktop) {
+    right: 30%;
+  }
+}
+
+.svg-rings {
+  transform: translateX(-50%);
+  left: 50%;
+  width: 200px;
 }
 
 .image-wrapper {
