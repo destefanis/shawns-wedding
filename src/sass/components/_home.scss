@@ -17,6 +17,14 @@
   background-size: cover;
   background-position: bottom;
 
+  @include min($xlarge) {
+    height: 900px;
+  }
+
+  @include min($xxlarge) {
+    height: 1100px;
+  }
+
   svg {
     position: absolute;
     transform: translatex(-50%);
